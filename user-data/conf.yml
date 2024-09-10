@@ -126,5 +126,22 @@ sections:
       - *ref_7
       - *ref_8
       - *ref_9
+  - name: System Monitoring
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_10
+        title: Grafana
+        description: Monitoring and Graphics
+        icon: https://upload.wikimedia.org/wikipedia/commons/3/3b/Grafana_icon.svg
+        url: http://82.66.136.101:3000
+        target: newtab
+        id: 0_1739_grafana
+    filteredItems:
+      - *ref_10
 
 
