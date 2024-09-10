@@ -2,31 +2,17 @@
 # Page meta info, like heading, footer text and nav links
 pageInfo:
   title: Temporis
-  description: "Bienvenue sur le centre d'application de Khalleessy"
+  description: Bienvenue sur le centre d'application de Khalleessy
   navLinks:
-    - title: GitHub
-      path: https://github.com/Lissy93/dashy
-    - title: Documentation
-      path: https://dashy.to/docs
+    - title: NE PAS CLIQUER
+      path: https://www.youtube.com/watch?v=sXmA95q6HOE
+    - title: Nous Rejoindre
+      path: https://discord.gg/bxrVgd3g
 appConfig:
-  theme: glass
+  theme: colorful
   layout: vertical
-  iconSize: medium
+  iconSize: large
 sections:
-  - name: Uptime-Kuma
-    widgets:
-      - type: iframe
-        useProxy: false
-        options:
-          url: http://82.66.136.101:3005/
-          frameHeight: 500
-        id: 0_1071_iframe
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
   - name: Streaming
     displayData:
       sortBy: default
@@ -35,22 +21,24 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_6
+      - &ref_0
         title: Jellystat
+        description: Khalleessy stat
         icon: >-
           https://styles.redditmedia.com/t5_85t29z/styles/communityIcon_k0ghjactvuwa1.png
         url: http://82.66.136.101:3001/
         target: newtab
         id: 0_938_jellystat
-      - &ref_7
+      - &ref_1
         title: Khalleessy
+        description: Streaming Services
         icon: https://i.ibb.co/S0S8B8h/icon-transparent-removebg-preview.png
         url: https://Khalleessy.fr/
         target: newtab
         id: 1_938_khalleessy
     filteredItems:
-      - *ref_6
-      - *ref_7
+      - *ref_0
+      - *ref_1
   - name: Demande Film/Series
     displayData:
       sortBy: default
@@ -59,7 +47,7 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_8
+      - &ref_2
         title: Xuasis
         description: Appli de demande de film
         icon: >-
@@ -67,21 +55,21 @@ sections:
         url: https://82.66.136.101:5000
         target: newtab
         id: 0_1776_xuasis
-      - &ref_9
+      - &ref_3
         title: Sonarr
         description: Logiciel de gestion de série
         icon: https://i.ibb.co/6sBX6vN/t-l-chargement.png
         url: 82.66.136.101:8989
         target: newtab
         id: 1_1776_sonarr
-      - &ref_10
+      - &ref_4
         title: Prowlarr
         description: Recherche d'indexeur
         icon: https://i.ibb.co/ykXNZpz/Removal-394.png
         url: http://82.66.136.101:9696/system/status
         target: newtab
         id: 2_1776_prowlarr
-      - &ref_11
+      - &ref_5
         title: Radarr
         description: Organisation des films
         icon: >-
@@ -89,11 +77,54 @@ sections:
         url: http://82.66.136.101:7878/system/status
         target: newtab
         id: 3_1776_radarr
-        
     filteredItems:
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
+  - name: Dev Tools
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_6
+        title: Github
+        description: Repositories of github
+        icon: >-
+          https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png
+        url: https://github.com/trending
+        target: newtab
+        id: 0_848_github
+      - &ref_7
+        title: Uptime Kuma
+        description: Online Server Checker
+        icon: >-
+          https://static-00.iconduck.com/assets.00/uptime-kuma-icon-1024x940-gabwl61r.png
+        url: http://82.66.136.101:3005
+        target: newtab
+        id: 1_848_uptimekuma
+      - &ref_8
+        title: Hack The Box
+        description: Cybersécurité Test
+        icon: https://www.finsmes.com/wp-content/uploads/2023/01/Hack-The-Box.jpeg
+        url: https://www.hackthebox.com/
+        target: newtab
+        id: 2_848_hackthebox
+      - &ref_9
+        title: Clouflare
+        description: Domain DNS
+        icon: >-
+          https://logodownload.org/wp-content/uploads/2016/10/cloudflare-logo-0.png
+        url: https://cloudflare.com
+        target: newtab
+        id: 3_848_clouflare
+    filteredItems:
+      - *ref_6
+      - *ref_7
       - *ref_8
       - *ref_9
-      - *ref_10
-      - *ref_11
 
 
