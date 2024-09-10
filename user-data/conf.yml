@@ -1,8 +1,8 @@
 ---
 # Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Temporis
+  description: "Bienvenue sur le centre d'application de Khalleessy"
   navLinks:
     - title: GitHub
       path: https://github.com/Lissy93/dashy
@@ -13,6 +13,20 @@ appConfig:
   layout: vertical
   iconSize: medium
 sections:
+  - name: Uptime-Kuma
+    widgets:
+      - type: iframe
+        useProxy: true
+        options:
+          url: http://82.66.136.101:3005/
+          frameHeight: 500
+        id: 0_1071_iframe
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
   - name: Getting Started
     icon: fas fa-rocket
     items:
@@ -98,7 +112,7 @@ sections:
         description: Appli de demande de film
         icon: >-
           https://i.ibb.co/t8bjddm/0c8a6e05-a577-4cb4-ad42-c88883dbf5a9-removebg.png
-        url: 82.66.136.101:5000
+        url: https://82.66.136.101:5000
         target: newtab
         id: 0_1776_xuasis
       - &ref_9
@@ -123,9 +137,11 @@ sections:
         url: http://82.66.136.101:7878/system/status
         target: newtab
         id: 3_1776_radarr
+        
     filteredItems:
       - *ref_8
       - *ref_9
       - *ref_10
       - *ref_11
+
 
