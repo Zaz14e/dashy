@@ -10,7 +10,7 @@ pageInfo:
       path: https://dashy.to/docs
 appConfig:
   theme: glass
-  layout: auto
+  layout: vertical
   iconSize: medium
 sections:
   - name: Getting Started
@@ -78,11 +78,54 @@ sections:
         id: 0_938_jellystat
       - &ref_7
         title: Khalleessy
-        icon: https://gbatemp.net/attachments/394652/
+        icon: https://i.ibb.co/S0S8B8h/icon-transparent-removebg-preview.png
         url: https://Khalleessy.fr/
         target: newtab
         id: 1_938_khalleessy
     filteredItems:
       - *ref_6
       - *ref_7
+  - name: Demande Film/Series
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_8
+        title: Xuasis
+        description: Appli de demande de film
+        icon: >-
+          https://i.ibb.co/t8bjddm/0c8a6e05-a577-4cb4-ad42-c88883dbf5a9-removebg.png
+        url: 82.66.136.101:5000
+        target: newtab
+        id: 0_1776_xuasis
+      - &ref_9
+        title: Sonarr
+        description: Logiciel de gestion de série
+        icon: https://i.ibb.co/6sBX6vN/t-l-chargement.png
+        url: 82.66.136.101:8989
+        target: newtab
+        id: 1_1776_sonarr
+      - &ref_10
+        title: Prowlarr
+        description: Recherche d'indexeur
+        icon: https://i.ibb.co/ykXNZpz/Removal-394.png
+        url: http://82.66.136.101:9696/system/status
+        target: newtab
+        id: 2_1776_prowlarr
+      - &ref_11
+        title: Radarr
+        description: Organisation des films
+        icon: >-
+          https://i.ibb.co/bsJwzT7/6941a62f-8243-4c1d-883e-974678f5b5a6-removebg-preview.png
+        url: http://82.66.136.101:7878/system/status
+        target: newtab
+        id: 3_1776_radarr
+    filteredItems:
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
 
